@@ -14,7 +14,7 @@ def partition(List, left, right):
     x = List[right]
     i = left - 1
     for j in range(left, right):
-        if List[j] <= x:
+        if List[j] < x:
             i += 1
             swap(List, i, j)
     swap(List, i + 1, right)
