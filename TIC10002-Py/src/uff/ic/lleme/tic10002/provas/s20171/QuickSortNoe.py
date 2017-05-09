@@ -2,9 +2,9 @@ def swap(List, a, b):
     temp = List[a]
     List[a] = List[b]
     List[b] = temp
-    print (List)
 
 def quicksort(List, left, right):
+    print(List)
     if left < right:
         q = partition(List, left, right)
         quicksort(List, left, q - 1)
